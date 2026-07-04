@@ -1,0 +1,30 @@
+{
+	"name": "@yassalam/ui-core",
+	"version": "0.1.0",
+	"description": "Reusable UI shell, admin shell, and dynamic section engine for Yassalam ecosystem websites",
+	"type": "module",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"src"
+	],
+	"scripts": {
+		"check": "esbuild index.js --bundle --format=esm --outfile=.check-bundle.js --external:react --external:react-dom --external:react-router-dom --external:axios --external:framer-motion --external:lucide-react --external:react-helmet --external:@radix-ui/react-toast --external:class-variance-authority --external:clsx --external:tailwind-merge"
+	},
+	"peerDependencies": {
+		"@radix-ui/react-toast": "^1.2.0",
+		"axios": "^1.0.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
+		"framer-motion": "^10.0.0 || ^11.0.0",
+		"lucide-react": ">=0.400.0",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-helmet": "^6.0.0",
+		"react-router-dom": "^6.0.0 || ^7.0.0",
+		"tailwind-merge": "^2.0.0"
+	},
+	"devDependencies": {
+		"esbuild": "^0.24.0"
+	}
+}
